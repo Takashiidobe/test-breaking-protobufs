@@ -16,7 +16,7 @@ pub fn create_large_shirt(color: String) -> items::Shirt {
 
 pub fn serialize_shirt(shirt: &items::Shirt) -> Vec<u8> {
     let mut buf = Vec::new();
-    shirt.encode(&mut buf).unwrap();
+    shirt.encode(&mut buf).expect("failed to serialize");
     buf
 }
 
