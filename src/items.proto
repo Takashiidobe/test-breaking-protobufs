@@ -8,6 +8,7 @@ message Shirt {
     SMALL = 0;
     MEDIUM = 1;
     LARGE = 2;
+    XL = 3;
   }
 
   string color = 1;
