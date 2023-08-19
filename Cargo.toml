@@ -1,0 +1,14 @@
+[package]
+name = "snazzy"
+version = "0.1.0"
+authors = ["Dan Burkert <dan@danburkert.com>"]
+description = "Example project using prost-build"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+bytes = "1.4.0"
+prost = "0.11.9"
+
+[build-dependencies]
+prost-build = "0.11.9"
