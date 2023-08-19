@@ -1,4 +1,7 @@
-on: pull_request # Apply to all pull requests
+on:
+  pull_request:
+    paths:
+      - '**/*.proto'
 jobs:
   validate-protos:
     runs-on: ubuntu-latest
